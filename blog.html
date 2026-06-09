@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Ntandokathixo Dwango</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body class="blog-page">
+    <div class="top-bar">
+        <h1 class="logo">Ntandokathixo Dwango</h1>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <nav class="socials-nav">
+                <ul class="social-links">
+                    <li class="search-icon">@</li>
+                    <li><a href="https://www.instagram.com/i.nandos">IG</a></li>
+                    <li><a href="https://www.tiktok.com/@inandos">Tiktok</a></li>
+                    <li><a href="https://pin.it/1VtYvhpHP">Pinterest</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburgerBtn">☰</button>
+        </div>
+    </div>
+
+    <div class="slide-menu" id="slideMenu">
+        <button class="close-menu" id="closeMenuBtn">✕</button>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <nav class="main-nav">
+        <ul class="page-links">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="blog-title">Ntando's Fashion Diaries</h1>
+
+    <main>
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <span class="featured-tag">★ FEATURED POST</span>
+                    <h2>Don't Sleep on a Fur Coat</h2>
+                    <p>A leopard print fur coat at that. I've been wearing this fur coat for a couple of years and it's my favourite item in my closet. If you love a pretty and wild looking closet, get yourself some fur and animal print. You won't regret it, trust. It literally elevates any look. It's definitely a statement piece, perfect for autumn and winter. I bought this one from Fashion Nova and the quality is fantastic. They may not have this exact one right now but I trust Fashion Nova to have a good fur coat.</p>
+                    <a href="fur-coat" class="read-more-btn">READ MORE →</a>
+                </div>
+                <div class="featured-image">
+                    <img src="images/blogpage/IMG_7547.jpg" alt="Leopard Print Fur Coat">
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Filters -->
+        <div class="blog-filters">
+            <button class="filter-btn active" data-category="all">ALL</button>
+            <button class="filter-btn" data-category="autumn">AUTUMN LOOKS</button>
+            <button class="filter-btn" data-category="summer">SUMMER LOOKS</button>
+            <button class="filter-btn" data-category="party">PARTY GUEST</button>
+        </div>
+
+        <!--Blog Posts Grid - Page 1  -->
+        <section class="blog-posts">
+            <div class="posts-grid">
+                <div class="blog-card" data-category="autumn">
+                    <a href="boot-love">
+                        <img src="images/blogpage/IMG_7443.jpeg" alt="Boots">
+                        <h3>A Boot Love Affair: Styling Boots</h3>
+                        <p class="post-date">12 May 2026</p>
+                    </a>
+                </div>
+                <div class="blog-card" data-category="summer">
+                    <a href="summering">
+                        <img src="images/blogpage/image00007.jpeg" alt="Summering">
+                        <h3>I'm Summering: Vacation Looks</h3>
+                        <p class="post-date">2 May 2026</p>
+                    </a>
+                </div>
+                <div class="blog-card" data-category="party">
+                    <a href="girls-night">
+                        <img src="images/blogpage/image00033.jpeg" alt="Girls Night">
+                        <h3>What to Wear: Girls Night Out</h3>
+                        <p class="post-date">8 May 2026</p>
+                    </a>
+                </div>
+                <div class="blog-card" data-category="summer">
+                    <a href="bikinis">
+                        <img src="images/blogpage/IMG_7557.jpeg" alt="Bikinis">
+                        <h3>Bikini Season: My Top Picks</h3>
+                        <p class="post-date">25 May 2026</p>
+                    </a>
+                </div>
+                <div class="blog-card" data-category="autumn">
+                    <a href="how-many-furs">
+                        <img src="images/blogpage/IMG_7561.jpeg" alt="Furs">
+                        <h3>How Many Furs You Got?</h3>
+                        <p class="post-date">28 April 2026</p>
+                    </a>
+                </div>
+                <div class="blog-card" data-category="autumn">
+                    <a href="street-style">
+                        <img src="images/blogpage/image00073.jpeg" alt="Street Style">
+                        <h3>My Favourite Street Style Looks: How to Dress For THAA Streets</h3>
+                        <p class="post-date">10 May 2026</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 2 Blog Posts -->
+        <section class="blog-posts page2">
+            <div class="posts-grid">
+                <div class="blog-card" data-category="autumn">
+                    <a href="midi-skirts">
+                        <img src="images/blogpage/image00051.jpeg" alt="Midi Skirts">
+                        <h3>For the Love of Midi Skirts!</h3>
+                        <p class="post-date">5 May 2026</p>
+                    </a>
+                </div>
+                
+                <div class="blog-card" data-category="summer">
+                    <a href="outfits-work">
+                        <img src="images/blogpage/image00022.jpeg" alt="Unlikely Outfits">
+                        <h3>Outfits That Shouldn't Work, But They Do!</h3>
+                        <p class="post-date">20 April 2026</p>
+                    </a>
+                </div>
+                 <div class="blog-card" data-category="party">
+                    <a href="tea-party">
+                        <img src="images/blogpage/IMG_7442.jpeg" alt="Tea Party">
+                        <h3>High Tea Party: Chill Edition</h3>
+                        <p class="post-date">18 May 2026</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#page1" class="active">1</a>
+            <a href="#page2">2</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright Ntandokathixo Dwango 
+            <ul class="footer-social-links">
+                <li><a href="https://www.instagram.com/i.nandos">IG</a></li>
+                <li><a href="https://www.tiktok.com/@inandos">Tiktok</a></li>
+                <li><a href="https://pin.it/1VtYvhpHP">Pinterest</a></li>
+            </ul> 
+            <time datetime="2026-05-01">2026</time>
+        </p>
+    </footer>
+</body>
+</html>
+   
