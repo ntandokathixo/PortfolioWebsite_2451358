@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== BLOG PAGE CATEGORY FILTER =====
+    // BLOG PAGE CATEGORY FILTER
     const filterBtns = document.querySelectorAll('.filter-btn');
     const blogCards = document.querySelectorAll('.blog-card');
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== BLOG PAGE PAGINATION =====
+    // BLOG PAGE PAGINATION 
     const page1Link = document.querySelector('.pagination a[href="#page1"]');
     const page2Link = document.querySelector('.pagination a[href="#page2"]');
     const page1Posts = document.querySelector('.blog-posts:not(.page2)');
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== BLOG POST FULL VIEW (5th page) =====
+    // BLOG POST FULL VIEW (5th page) 
     // Get all blog post links on homepage and blog page
     const allPostLinks = document.querySelectorAll('.post-card, .blog-card a');
     const fullPostContainer = document.getElementById('full-post-container');

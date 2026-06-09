@@ -3,61 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Shop | Ntandokathixo Dwango</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/main.js" defer></script>
 </head>
-<body>
-    <header>
-
-        <div class="top-bar">
-            <h1 class="logo">Ntandokathixo Dwango</h1>
+<body class="shop-page">
+    <div class="top-bar">
+        <h1 class="logo">Ntandokathixo Dwango</h1>
+        <div class="top-bar-right">
             <nav class="socials-nav">
-              <ul class="social-links">
-                <li class="search-icon">@</li>
-                <li><a href="https://www.instagram.com/i.nandos?igsh=MXA2dDZqcmVsYThvMA%3D%3D&utm_source=qr">IG</a></li>
-                <li><a href="https://www.tiktok.com/@inandos?_r=1&_t=ZS-95dtrnkW7IT">Tiktok</a></li>
-                <li><a href="https://pin.it/1VtYvhpHP">Pinterest</a></li>
-              </ul>
+                <ul class="social-links">
+                    <li class="search-icon">@</li>
+                    <li><a href="https://www.instagram.com/i.nandos">IG</a></li>
+                    <li><a href="https://www.tiktok.com/@inandos">Tiktok</a></li>
+                    <li><a href="https://pin.it/1VtYvhpHP">Pinterest</a></li>
+                </ul>
             </nav>
+            <button class="hamburger" id="hamburgerBtn">☰</button>
         </div>
+    </div>
 
-        
-        <nav class="main-nav">
-            <ul class="page-links">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./blog.html">Blog</a></li>
-              <li><a href="./shop.html">Shop</a></li>
-              <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
+    <nav class="main-nav">
+        <ul class="page-links">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+    </nav>
 
-        <h1>My Wardrobe</h1>
+    <!-- Slide Menu -->
+    <div class="slide-menu" id="slideMenu">
+        <button class="close-menu" id="closeMenuBtn">✕</button>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./shop.html">SHOP</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
 
-        <figure>
-                <img src="" alt="sample place holder">
-                <figcaption></figcaption>
-        </figure>
+    <main class="shop-main">
+        <!-- Page Title -->
+        <h1 class="shop-title">My Wardrobe</h1>
 
-    </header>
-    <main>
-        <section class="shop-by-category"> 
-            <h2>Shop by Category</h2>
+        <!-- Shop by Category Section -->
+        <section class="shop-by-category">
+            <h2 class="category-title">Shop by Category</h2>
+            <div class="category-grid">
+                <a href="shop-shoes.html" class="category-card">
+                    <img src="images/shop/shoes.jpg" alt="Shoes">
+                    <span class="category-name">Shoes</span>
+                </a>
+                <a href="shop-pants-jeans.html" class="category-card">
+                    <img src="images/shop/pants-jeans.jpg" alt="Pants & Jeans">
+                    <span class="category-name">Pants & Jeans</span>
+                </a>
+                <a href="shop-dresses-skirts.html" class="category-card">
+                    <img src="images/shop/dresses-skirts.jpg" alt="Dresses & Skirts">
+                    <span class="category-name">Dresses & Skirts</span>
+                </a>
+                <a href="shop-tops.html" class="category-card">
+                    <img src="images/shop/tops.jpg" alt="Tops">
+                    <span class="category-name">Tops</span>
+                </a>
+                <a href="shop-accessories-bags.html" class="category-card">
+                    <img src="images/shop/accessories-bags.jpg" alt="Accessories & Bags">
+                    <span class="category-name">Accessories & Bags</span>
+                </a>
+            </div>
         </section>
 
-        <section class="dream-wardrobe"> 
-            <h2>DREAM Wardrobe</h2>
+        <!-- In My Cart Section -->
+        <section class="in-my-cart">
+            <h2 class="cart-title">★ In My Cart This Week ★</h2>
+            <div class="cart-grid">
+                <div class="cart-card">
+                    <img src="images/shop/cart-item1.jpg" alt="COS Wool Blazer">
+                    <h3>COS Wool Blazer</h3>
+                    <p class="price">R2,499</p>
+                    <a href="#" class="shop-now-btn" target="_blank">SHOP NOW →</a>
+                </div>
+                <div class="cart-card">
+                    <img src="images/shop/cart-item2.jpg" alt="Levi's Ribcage Jeans">
+                    <h3>Levi's Ribcage Jeans</h3>
+                    <p class="price">R1,299</p>
+                    <a href="#" class="shop-now-btn" target="_blank">SHOP NOW →</a>
+                </div>
+                <div class="cart-card">
+                    <img src="images/shop/cart-item3.jpg" alt="& Other Stories Knit">
+                    <h3>& Other Stories Knit</h3>
+                    <p class="price">R899</p>
+                    <a href="#" class="shop-now-btn" target="_blank">SHOP NOW →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Reviews Section -->
+        <section class="reviews-section">
+            <h2 class="reviews-title">Community Reviews</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The blazer is even better in person. Worth every cent!"</p>
+                    <span class="reviewer">— Thandi M., Oct 2026</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Finally found jeans that fit my height. Thank you for the detailed review!"</p>
+                    <span class="reviewer">— Lerato K., Sep 2026</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐</div>
+                    <p>"Loved the knit but sizing runs small. Size up!"</p>
+                    <span class="reviewer">— Busi D., Sep 2026</span>
+                </div>
+            </div>
+            <a href="#" class="leave-review-btn">LEAVE A REVIEW →</a>
         </section>
     </main>
+
     <footer>
-    <p> Copywright Ntandokathixo Dwango 
-        <ul class="footer-social-links">
-                <li><a href="https://www.instagram.com/i.nandos?igsh=MXA2dDZqcmVsYThvMA%3D%3D&utm_source=qr">IG</a></li>
-                <li><a href="https://www.tiktok.com/@inandos?_r=1&_t=ZS-95dtrnkW7IT">Tiktok</a></li>
+        <p>Copyright Ntandokathixo Dwango 
+            <ul class="footer-social-links">
+                <li><a href="https://www.instagram.com/i.nandos">IG</a></li>
+                <li><a href="https://www.tiktok.com/@inandos">Tiktok</a></li>
                 <li><a href="https://pin.it/1VtYvhpHP">Pinterest</a></li>
-              </ul> 
-        <time datetime="2026-04-17">2026</time> </p>
- </footer>
+            </ul> 
+            <time datetime="2026-05-01">2026</time>
+        </p>
+    </footer>
 </body>
-</html> 
+</html>
