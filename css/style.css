@@ -7,7 +7,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 253, 247);
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -285,8 +285,8 @@ body.home-page .top-bar.scrolled .hamburger {
 }
 
 .hero-text .drop-cap {
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     display: block;
     line-height: 1.2;
@@ -713,5 +713,416 @@ footer p {
     
     .blog-filters {
         margin: 0 20px;
+    }
+}
+
+/* ABOUT PAGE STYLES */
+
+.about-page .main-nav .page-links li a {
+    color: rgb(84, 21, 21);
+    text-shadow: none;
+}
+
+.about-main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.about-profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid  rgb(84,21,21);;
+}
+
+.about-title {
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(84,21,21);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-paragraph {
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgb(84,80,80);
+    text-align: center;
+    margin: 0 auto 20px auto;
+    max-width: 700px;
+}
+
+/* BRANDS SECTION */
+
+.brands-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.brands-tile {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color:rgb(84,21,21);
+    margin-bottom: 30px;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.brand-card {
+    
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-5px);
+}
+
+.brand-card img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.contact-title {
+   font-family: 'Playfair Display', serif;
+   font-size: 28px;
+   font-weight: 400;
+   color: rgb(84,21,21);
+   margin-bottom: 30px;
+}
+
+.contact-form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 8px;
+    background-color: rgb(255,255,255);
+    transition: border-color 0.3 ease;
+}
+
+.form-group input:focus, .form-group textarea {
+    outline: none;
+    border-color: rgb(84,21,21);
+}
+
+.submit-btn {
+    background-color: rgb(84,21,21);
+    color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px, 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-colour 0.3s ease;
+}
+ 
+.submit-btn:hover {
+    background-color: rgb(60,15,15);
+}
+
+.contact-email {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(80, 80, 80);
+}
+
+.contact-email a {
+    color: rgb(84,21,21);
+    text-decoration: none;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;;
+}
+
+/* SHOP PAGE */
+
+.shop-page .main-nav .page-links li a {
+    color: rgb(84, 21, 21);
+    text-shadow: none;
+}
+
+.shop-main {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.shop-hero-image{
+    width: 100%;
+    left: 0;
+    height: 700px;
+    object-fit: cover;
+    padding-top: 30px;
+}
+
+.shop-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(84,21,21);
+}
+
+/* SHOP BY CATEGORY */
+
+.shop-by-category {
+    margin-bottom: 60px;
+}
+
+.category-title {
+    font-family: 'Playfiar Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.category-card {
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.category-name{
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(84,21,21);
+    margin-top: 10px;
+}
+
+/* IN MY CART SECTION */
+
+.in-my-cart {
+    background-color: rgb(250, 248, 242);
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 60px;
+}
+
+.cart-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(84, 21, 21);
+    margin-bottom: 30px;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cart-card {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.cart-card:hover {
+    transform: translateY(-5px);
+}
+
+.cart-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cart-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    margin-bottom: 5px;
+}
+
+.cart-card .price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(84, 21, 21);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(84, 21, 21);
+    border-bottom: 2px solid rgb(84, 21, 21);
+    padding-bottom: 4px;
+}
+
+/* REVIEW SECTION */
+
+.reviews-section {
+    text-align: center;
+}
+
+.reviews-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.review-card {
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.review-card .stars {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(80, 80, 80);
+    margin-bottom: 10px;
+}
+
+.review-card .reviewer {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+}
+
+.leave-review-btn {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(84, 21, 21);
+    border-bottom: 2px solid rgb(84, 21, 21);
+    padding-bottom: 4px;
+}
+
+/* Responsive for Shop and About */
+@media (max-width: 1024px) {
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .cart-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .brands-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-main, .about-main {
+        padding: 40px 20px;
+    }
+    
+    .shop-title {
+        font-size: 36px;
+    }
+     
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cart-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-title {
+        font-size: 28px;
     }
 }
