@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // BLOG POST FULL VIEW (5th page) 
     // Get all blog post links on homepage and blog page
-    const allPostLinks = document.querySelectorAll('.post-card, .blog-card a');
+    const allPostLinks = document.querySelectorAll('.post-card, .blog-card a, .read-more-btn');
     const fullPostContainer = document.getElementById('full-post-container');
     
       // Store post data for all blog posts
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'autumn',
             image: 'images/blog/boots-full.jpg',
             content: 'I have an obsession with boots and you should too. There\'s just something about a big chunky boot with baggy jeans, or a chunky high heel boot with a midi skirt or even a mini skirt. Boots can transform any outfit from basic to bold in seconds. Whether you\'re going for a grunge look with combat boots or a sleek evening vibe with heeled boots, there\'s a pair for every mood. My current favourites? A pair of white knee-high boots that go with everything and some black platform boots that make me feel unstoppable. Trust me, once you start, you won\'t stop.',
-            gallery: ['images/blog/boots-jeans.jpg', 'images/blog/boots-skirt.jpg', 'images/blog/boots-dress.jpg']
+            gallery: ['images/blogpage/jsimages/boots1.jpeg', 'images/blogpage/jsimages/boots2.jpeg', 'images/blogpage/jsimages/boots3.jpeg']
         },
         'girls-night': {
             title: 'What to Wear: Girls Night Out',
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: 'autumn',
             image: 'images/blog/street-style-full.jpg',
             content: 'Listen, street style is my love language. There\'s something about throwing together an outfit that looks effortless but actually took way too long to put together. I love a good baggy jean with a fitted top, or an oversized blazer with some chunky sneakers. The key is confidence. You can wear anything if you act like you own the room. My favourite street style looks always have a little edge. Maybe some silver jewellery, maybe a bold lip, maybe just really good sunglasses. Don\'t be afraid to mix patterns or textures. The streets are your runway, so have fun with it.',
-            gallery: ['images/blog/street-look1.jpg', 'images/blog/street-look2.jpg', 'images/blog/street-look3.jpg']
+            gallery: ['images/blogpage/jsimages/street1.jpeg', 'images/blogpage/jsimages/street2.jpeg', 'images/blogpage/jsimages/street3.jpeg']
         },
         'midi-skirts': {
             title: 'For the Love of Midi Skirts!',
@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'how-many-furs': {
             title: 'How Many Furs You Got?',
-            date: '28 April 2026',
+            date: '28 May 2026',
             category: 'party',
             image: 'images/blog/furs-full.jpg',
             content: 'I\'ll be honest with you. I have a problem and the problem is that I keep buying fur coats. Faux fur obviously, but still. There\'s just something about throwing on a fluffy coat that makes any outfit ten times better. Going to the grocery store? Fur coat. Coffee run? Fur coat. Night out? Definitely a fur coat. I have a pink one, a leopard one, a cream one, and I want more. They make you feel like a celebrity even when you\'re just walking to your car. So here\'s my question to you. How many furs you got? And if the answer is none, what are we doing? Let\'s fix that.',
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'outfits-work': {
             title: 'Outfits That Shouldn\'t Work, But They Do!',
-            date: '20 April 2026',
+            date: '30 April 2026',
             category: 'summer',
             image: 'images/blog/unlikely-outfits-full.jpg',
             content: 'Some outfits just don\'t make sense on paper but then you put them on and something magical happens. I\'m talking about a dress over pants. Or socks with sandals. Or a really bold pattern mixed with another bold pattern. These are the outfits that shouldn\'t work but they do. My favourite right now is wearing a silky slip dress over wide leg jeans with chunky sneakers. It sounds crazy but it works. The trick is to commit. If you act like it makes sense, people will believe you. So go ahead and break the fashion rules. Sometimes the best outfits come from saying "why not" instead of "why."',
@@ -198,13 +198,23 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         'fur-coat': {
             title: 'Don\'t Sleep on a Fur Coat',
-            date: '15 April 2026',
+            date: '25 April 2026',
             category: 'featured',
             image: 'images/blog/fur-coat-full.jpg',
             content: 'A leopard print fur coat at that. I\'ve been wearing this fur coat for a couple of years and it\'s my favourite item in my closet. If you love a pretty and wild looking closet, get yourself some fur and animal print. You won\'t regret it, trust. It literally elevates any look. It\'s definitely a statement piece, perfect for autumn and winter. I bought this one from Fashion Nova and the quality is fantastic. They may not have this exact one right now but I trust Fashion Nova to have a good fur coat. Honestly, a good fur coat changes everything. You throw it on over jeans and a t shirt and suddenly you look like you tried. It\'s magic. So please, don\'t sleep on a fur coat. Get one. Wear it. Love it.',
-            gallery: ['images/blog/furcoat-look1.jpg', 'images/blog/furcoat-look2.jpg']
+            gallery: ['images/blog/furcoat-look1.jpg', 'images/blog/furcoat-look2.jpg,']
+        },
+
+        'leopard-fur-coat': {
+            title: 'Don\'t Sleep on a Leopard Fur Coat',
+            date: '26 May 2026',
+            category: 'featured',
+            image: 'images/blog/fur-coat-full.jpg',
+            content: 'A leopard print fur coat at that. I\'ve been wearing this fur coat for a couple of years and it\'s my favourite item in my closet. If you love a pretty and wild looking closet, get yourself some fur and animal print. You won\'t regret it, trust. It literally elevates any look. It\'s definitely a statement piece, perfect for autumn and winter. I bought this one from Fashion Nova and the quality is fantastic. They may not have this exact one right now but I trust Fashion Nova to have a good fur coat. Honestly, a good fur coat changes everything. You throw it on over jeans and a t shirt and suddenly you look like you tried. It\'s magic. So please, don\'t sleep on a fur coat. Get one. Wear it. Love it.',
+            gallery: ['images/blogpage/jsimages/leopard1.jpg', 'images/blogpage/jsimages/leopard2.jpg', 'images/blogpage/jsimages/leopard3.jpg']
         }
-    };
+}
+
 
     // Create full post page if it doesn't exist
     if (!document.getElementById('full-post-page')) {
@@ -261,8 +271,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Add click handlers to all post links
-        // Add click handlers to all post links
+    // Click handlers to all post links
     if (allPostLinks.length > 0) {
         allPostLinks.forEach(function(link) {
             link.addEventListener('click', function(e) {
@@ -288,10 +297,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     openFullPost('how-many-furs');
                 } else if (href && href.includes('outfits-work')) {
                     openFullPost('outfits-work');
-                } else if (href && href.includes('fur-coat')) {
-                    openFullPost('fur-coat');
+                } else if (href && href.includes('fur-coat') || href && href.includes('leopard')) {
+                    openFullPost('leopard-fur-coat'); 
                 } else {
-                    // If no match, try to use href as key directly
+                
                     if (postData[href]) {
                         openFullPost(href);
                     } else {

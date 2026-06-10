@@ -485,11 +485,11 @@ footer p {
 
 .blog-title {
     font-family: 'Playfair Display', serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 400;
     text-align: center;
     color: rgb(84, 21, 21);
-    margin: 60px 0 40px 0;
+    margin: 80px 0 40px 0;
 }
 
 .featured-post {
@@ -503,11 +503,12 @@ footer p {
     gap: 50px;
     background-color: rgb(250, 248, 242);
     overflow: hidden;
+    padding: 40px;
 }
-
 .featured-text {
     flex: 1;
-    padding: 40px;
+    padding: 20px;
+    order: 2;
 }
 
 .featured-tag {
@@ -522,7 +523,7 @@ footer p {
 
 .featured-text h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 600;
     color: rgb(84, 21, 21);
     margin-bottom: 15px;
@@ -530,7 +531,7 @@ footer p {
 
 .featured-text p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: rgb(100, 100, 100);
     line-height: 1.6;
     margin-bottom: 25px;
@@ -549,6 +550,7 @@ footer p {
 
 .featured-image {
     flex: 1;
+    order: 1;
 }
 
 .featured-image img {
@@ -724,154 +726,237 @@ footer p {
 }
 
 .about-main {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 
+/* PROFILE SECTION */
 .about-profile {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    margin-top: 40px;
 }
 
-.profile-image img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid  rgb(84,21,21);;
-}
-
-.about-title {
-    font-family: 'Open Sans' sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(84,21,21);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about-paragraph {
-    font-family: 'Open Sans' sans-serif;
-    font-size: 16px;
-    line-height: 1.8;
-    color: rgb(84,80,80);
-    text-align: center;
-    margin: 0 auto 20px auto;
-    max-width: 700px;
-}
-
-/* BRANDS SECTION */
-
-.brands-section {
-  margin-top: 60px;
-  text-align: center;
-}
-
-.brands-tile {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 400;
-    color:rgb(84,21,21);
-    margin-bottom: 30px;
-}
-
-.brands-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+.profile-image {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.brand-card {
-    
+.profile-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+/* ABOUT TEXT SECTION */
+.about-text-section {
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+    padding: 40px 0;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    margin-bottom: 30px;
+}
+
+.about-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgb(80, 80, 80);
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* BRANDS SECTION */
+.brands-section {
+    margin: 60px 0;
+    padding: 60px 0;
+    background-color: rgb(250, 248, 242);
+}
+
+.brands-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.brands-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+.brands-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
+}
+
+.brand-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
     border-radius: 12px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
 }
 
-.brand-card:hover {
-    transform: translateY(-5px);
-}
-
-.brand-card img{
-    width: 60px;
-    height: 60px;
+.brand-card img {
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
 /* CONTACT SECTION */
-
 .contact-section {
-    margin-top: 60px;
+    max-width: 800px;
+    margin: 80px auto 60px auto;
     text-align: center;
+    padding: 0 20px;
 }
 
 .contact-title {
-   font-family: 'Playfair Display', serif;
-   font-size: 28px;
-   font-weight: 400;
-   color: rgb(84,21,21);
-   margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    margin-bottom: 50px;
 }
 
-.contact-form{
+.contact-form {
+    text-align: left;
     max-width: 500px;
     margin: 0 auto;
 }
 
-.form-group{
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
-    padding: 12px 15px;
+    padding: 10px 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    border: 1px solid rgb(200, 200, 200);
-    border-radius: 8px;
-    background-color: rgb(255,255,255);
-    transition: border-color 0.3 ease;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+    outline: none;
 }
 
-.form-group input:focus, .form-group textarea {
-    outline: none;
-    border-color: rgb(84,21,21);
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: rgb(84, 21, 21);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Placeholder styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgb(150, 150, 150);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .submit-btn {
-    background-color: rgb(84,21,21);
-    color: antiquewhite;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 12px, 30px;
+    background: none;
     border: none;
-    border-radius: 30px;
+    border-bottom: 2px solid rgb(84, 21, 21);
+    color: rgb(84, 21, 21);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
     cursor: pointer;
-    transition: background-colour 0.3s ease;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    width: auto;
+    min-width: 120px;
 }
- 
+
 .submit-btn:hover {
-    background-color: rgb(60,15,15);
+    color: rgb(140, 60, 60);
+    border-bottom-color: rgb(140, 60, 60);
 }
 
 .contact-email {
-    margin-top: 20px;
+    margin-top: 40px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     color: rgb(80, 80, 80);
 }
 
 .contact-email a {
-    color: rgb(84,21,21);
+    color: rgb(84, 21, 21);
     text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(84, 21, 21);
+    padding-bottom: 2px;
 }
 
 .contact-email a:hover {
-    text-decoration: underline;;
+    color: rgb(140, 60, 60);
+    border-bottom-color: rgb(140, 60, 60);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .about-main {
+        padding: 40px 20px;
+    }
+    
+    .about-title {
+        font-size: 32px;
+    }
+    
+    .about-paragraph {
+        font-size: 16px;
+    }
+    
+    .brands-title {
+        font-size: 28px;
+    }
+    
+    .brands-grid {
+        gap: 20px;
+    }
+    
+    .brand-card {
+        padding: 15px 20px;
+    }
+    
+    .brand-card img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .contact-title {
+        font-size: 28px;
+    }
 }
 
 /* SHOP PAGE */
@@ -943,10 +1028,10 @@ footer p {
 .category-name{
     display: block;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
-    color: rgb(84,21,21);
-    margin-top: 10px;
+    color: rgb(84, 21, 21);
+    padding: 15px 15px 5px 15px;
 }
 
 /* IN MY CART SECTION */
@@ -1014,7 +1099,7 @@ footer p {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     color: rgb(84, 21, 21);
     border-bottom: 2px solid rgb(84, 21, 21);
     padding-bottom: 4px;
