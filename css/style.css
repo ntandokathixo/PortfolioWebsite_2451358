@@ -88,6 +88,16 @@ body.home-page .top-bar.scrolled .logo {
     color: rgb(84, 21, 21);
 }
 
+.logo-link {
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.7;
+}
+
 /* SOCIAL LINKS CONTAINER */
 .social-links {
     display: flex;
@@ -267,6 +277,12 @@ body.home-page .top-bar.scrolled .hamburger {
     font-weight: 500;
     color: rgb(234, 220, 201);
     text-shadow: 1px 1px 2px rgba(29, 29, 29, 0.3);
+    transition: border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.page-links li a:hover {
+    border-bottom: 2px solid rgb(234, 220, 201);
 }
 
 /* HERO TEXT */
@@ -481,6 +497,12 @@ footer p {
 .blog-page .main-nav .page-links li a {
     color: rgb(84, 21, 21);
     text-shadow: none;
+}
+
+.blog-page .page-links li a:hover,
+.shop-page .page-links li a:hover,
+.about-page .page-links li a:hover {
+    border-bottom: 2px solid rgb(84, 21, 21);
 }
 
 .blog-title {
@@ -1105,6 +1127,121 @@ footer p {
     padding-bottom: 4px;
 }
 
+/* SHOP CATEGORY PAGE (popup) */
+.shop-category-page {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 253, 247);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 80px 60px;
+}
+
+.shop-category-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.shop-category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgb(84, 21, 21);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop-items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+    align-items: start;
+}
+
+.shop-item-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 90%;
+    max-width: 600px;
+}
+
+.shop-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.shop-item-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.shop-item-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
+    margin-bottom: 8px;
+}
+
+.shop-item-card .price {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(84, 21, 21);
+    margin-bottom: 15px;
+}
+
+.shop-item-card .shop-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(84, 21, 21);
+    border-bottom: 2px solid rgb(84, 21, 21);
+    padding-bottom: 4px;
+}
+
+.close-category {
+    position: fixed;
+    top: 20px;
+    right: 40px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(84, 21, 21);
+    z-index: 1001;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .shop-category-page {
+        padding: 60px 20px;
+    }
+    
+    .shop-items-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .shop-category-title {
+        font-size: 36px;
+    }
+}
+
 /* REVIEW SECTION */
 
 .reviews-section {
@@ -1136,6 +1273,7 @@ footer p {
 .review-card .stars {
     font-size: 16px;
     margin-bottom: 10px;
+     color: rgb(0, 0, 0);
 }
 
 .review-card p {
@@ -1161,7 +1299,92 @@ footer p {
     color: rgb(84, 21, 21);
     border-bottom: 2px solid rgb(84, 21, 21);
     padding-bottom: 4px;
+    background: none;
+    cursor: pointer;
 }
+
+/* REVIEW FORM */
+.review-form-container {
+    background-color: rgb(250, 248, 242);
+    padding: 30px;
+    border-radius: 16px;
+    margin-top: 30px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review-form-container h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: rgb(84, 21, 21);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.rating-input {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(200, 200, 200);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.star-rating.active-star {
+    color: rgb(0, 0, 0);
+}
+
+.review-form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.review-form-container input,
+.review-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.review-form-container input:focus,
+.review-form-container textarea:focus {
+    outline: none;
+    border-bottom-color: rgb(84, 21, 21);
+}
+
+.submit-review-btn {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgb(84, 21, 21);
+    color: rgb(84, 21, 21);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 0;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cancel-review-btn {
+    background: none;
+    border: none;
+    color: rgb(150, 150, 150);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
 
 /* Responsive for Shop and About */
 @media (max-width: 1024px) {
@@ -1203,6 +1426,9 @@ footer p {
         grid-template-columns: 1fr;
     }
     
+    .review-form-container {
+        padding: 20px;
+    }
     .brands-grid {
         grid-template-columns: repeat(2, 1fr);
     }
